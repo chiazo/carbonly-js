@@ -11,7 +11,7 @@ export default class TransportationScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>
-          Transportation!
+          Transportation ready fo austin
         </Text>
       </View>
     );
