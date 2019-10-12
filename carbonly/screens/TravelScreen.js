@@ -6,19 +6,19 @@ import {
   Button
 } from 'react-native';
 
-export default class TransportationScreen extends React.Component {
+export default class TravelScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text>
-          Transportation ready fo austin
+          Travel ready fo austin
         </Text>
       </View>
     );
   }
 }
 
-TransportationScreen.navigationOptions = {
+TravelScreen.navigationOptions = {
   header: null,
 };
 
