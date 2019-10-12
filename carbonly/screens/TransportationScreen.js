@@ -1,28 +1,24 @@
 import React from 'react';
 import {
   StyleSheet,
-  Button,
   Text,
   View,
+  Button
 } from 'react-native';
 
-export default class HomeScreen extends React.Component {
+export default class TransportationScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text>
-          Testing
+          Transportation!
         </Text>
-        <Button
-          title="Go to Transportation"
-          onPress={() => this.props.navigation.navigate('Transportation')}
-        />
       </View>
     );
   }
 }
 
-HomeScreen.navigationOptions = {
+TransportationScreen.navigationOptions = {
   header: null,
 };
 
