@@ -15,7 +15,7 @@ export default function History() {
 }
 
 History.navigationOptions = {
-  title: 'Links',
+  title: 'History',
 };
 
 const styles = StyleSheet.create({
