@@ -11,10 +11,10 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>
-          Testing
+          Carbonly
         </Text>
         <Button
-          title="Go to Transportation"
+          title="Transportation"
           onPress={() => this.props.navigation.navigate('Transportation')}
         />
       </View>
