@@ -9,19 +9,17 @@ import styles from '../assets/styles/DefaultStyle';
 export default class TravelScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Button title="Home" onPress={() => this.props.navigation.navigate('HomeScreen')}/>
-        <Text style={styles.optionsTitleText}>Travel</Text>
-          <Text >Today</Text>
-          <Text >Weekly</Text>
-          <Text >Monthly</Text>
-          <Text style={styles.optionsSubTitleText}>All-time Average</Text>
+      <View style={styles.centerContainer}>
+          <Text style={styles.baseText}>Today</Text>
+          <Text style={styles.baseText}>Weekly</Text>
+          <Text style={styles.baseText}>Monthly</Text>
+          <Text style={styles.baseText}>All-time Average</Text>
       </View>
     );
   }
 }
 
 TravelScreen.navigationOptions = {
-  header: null,
+  title:"Travel",
 };
 

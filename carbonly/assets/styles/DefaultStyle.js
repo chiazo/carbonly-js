@@ -13,18 +13,19 @@ export default StyleSheet.create({
     centerContainer: {
       flex: 1,
       alignItems: 'center',
+      justifyContent: 'center',
+      margin: 10,
       backgroundColor: colors.back,
     },
     headerText: {
       fontSize: 32,
+      color: colors.pri,
+      margin: 20,
     },
-    textHierContainer: {
+    baseText: {
       fontSize: 20,
       color: colors.pri,
-      marginTop: 9,
-      marginLeft: 20,
-      marginBottom: 12,
-      textAlign: 'center',
+      margin: 12,
     },
     headerImage: {
       resizeMode: 'center',
