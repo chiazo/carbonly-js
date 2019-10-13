@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Text,
   View,
-  Button
+  Button,
+  ScrollView,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 
@@ -10,6 +11,7 @@ export default class DescriptionScreen extends React.Component {
 
     render() {
       return (
+        <ScrollView>
         <View style={styles.centerContainer}>
             <Button title="Offsets Options" onPress={() => this.props.navigation.navigate('Offset')}/>
             <Text style={styles.headerText}>Save Forests in Western Oaxaca, Mexico</Text>
@@ -18,6 +20,7 @@ export default class DescriptionScreen extends React.Component {
                 <Text style={styles.baseText}>Supporting this project costs 714 points per tonne of CO2e.</Text>
                 <Button title="Support this Project!" onPress={() => this.props.navigation.navigate('Purchase')}/>
         </View>
+        </ScrollView>
     );
   }
 }
