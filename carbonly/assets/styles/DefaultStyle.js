@@ -15,6 +15,7 @@ export default StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: colors.back,
+      padding: 20,
     },
     headerText: {
       fontSize: 32,
@@ -29,7 +30,7 @@ export default StyleSheet.create({
     headerImage: {
       resizeMode: 'center',
     },
-    spaceButtons: {
-      margin: 10,
+    button: {
+      padding: 10,
     }
   });
