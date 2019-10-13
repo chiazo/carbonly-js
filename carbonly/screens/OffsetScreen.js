@@ -13,7 +13,7 @@ export default class OffsetScreen extends React.Component {
   render() {
     return (
       <View style={styles.centerContainer}>
-        <Text style={styles.headerText}>Your Points: </Text>
+        <Text style={styles.headerText}>Your Points: [total points] </Text>
 
         <View style={styles.button}>
           <Button title="[Full Name] ([points per tonne] points per tonne of CO2e)" onPress={() => this.props.navigation.navigate('Description')}/>
