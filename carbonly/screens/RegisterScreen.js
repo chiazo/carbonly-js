@@ -23,35 +23,36 @@ export default class RegisterScreen extends React.Component {
     super();
     this.state = { user: {} };
     this.onSubmit = this.handleSubmit.bind(this);
-  }
-handleSubmit(e) {
-    e.preventDefault();
+  };
+
+  handleSubmit(e) {
+    //e.preventDefault();
     var self = this;
 
-    fetch('https://dioxidely-data-beta.herokuapp.com/register', { 
-        method: 'POST',
-        data: {
-          email: self.refs.email,
-          password: self.refs.password
-        }
-      })
-      .then(function(response) {
+    fetch('https://dioxidely-data-beta.herokuapp.com/register', {
+      method: 'POST',
+      data: {
+        email: self.refs.email,
+        password: self.refs.password
+      }
+    })
+      .then(function (response) {
         return response.json()
-      }).then(function(body) {
+      }).then(function (body) {
         console.log(body);
       });
-}
+  };
 
   render() {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
         <Text style={styles.baseText}>Username:</Text>
-        <TextInput style={styles.input}/>
+        <TextInput style={styles.input} />
         <Text style={styles.baseText}>Password:</Text>
-        <TextInput style={styles.input}/>
+        <TextInput style={styles.input} />
 
-        <Button title="Register" onPress={() => this.props.navigation.navigate('Login')} />
+        <Button title="Register" onPress={this.handleSubmit()} />
       </View>
     );
   }

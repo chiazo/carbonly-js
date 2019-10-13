@@ -35,6 +35,13 @@ export default StyleSheet.create({
       padding: 10,
     },
     input: {
+      backgroundColor: colors.contrast,
       color: colors.sec,
+      borderTopWidth: 1,
+      borderBottomWidth: 1,
+      height: 50,
+      fontSize: 25,
+      paddingLeft: 20,
+      paddingRight: 20
     },
   });
