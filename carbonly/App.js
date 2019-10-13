@@ -11,6 +11,7 @@ import DescriptionScreen from './screens/DescriptionScreen'
 import PurchaseConfirmationScreen from './screens/PurchaseConfirmationScreen'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
+import AboutScreen from './screens/AboutScreen'
 
 const AppNavigator = createStackNavigator(
   {
@@ -23,6 +24,7 @@ const AppNavigator = createStackNavigator(
   Offset: OffsetScreen,
   Description: DescriptionScreen,
   Purchase: PurchaseConfirmationScreen,
+  About: AboutScreen,
   },
   {
     initialRouteName: 'Register',
