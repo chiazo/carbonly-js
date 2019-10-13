@@ -1,11 +1,11 @@
 import {StyleSheet} from 'react-native';
 
 const colors = {
-    back: '#161515',
-    pri: '#247ba0',
-    priAlt: '#006494',
-    sec: '#006494',
-    secAlt: '#00a878',
+    back: '#161515',   // Black
+    pri: '#403f3f',    // Gray
+    accent: '#2975f4', // Blue
+    accentAlt: '#1e56b2',    // Darker Blue
+    secAccent: '#1bc181', // Pine Green
   };
 
 
@@ -49,15 +49,5 @@ export default StyleSheet.create({
       marginTop: 3,
       marginBottom: 4,
       textAlign: 'center',
-    },
-    optionIconContainer: {
-      marginRight: 9,
-    },
-    option: {
-      backgroundColor: colors.back,
-      paddingHorizontal: 15,
-      paddingVertical: 15,
-      borderBottomWidth: StyleSheet.hairlineWidth,
-      borderBottomColor: '#EDEDED',
     },
   });
