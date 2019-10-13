@@ -35,10 +35,11 @@ export default class LoginScreen extends React.Component {
 
         fetch('https://dioxidely-data-beta.herokuapp.com/login', { 
             method: 'POST',
-            data: {
+            body: JSON.stringify({
               email: user,
               password: pass
-            }
+            },
+            ),
           })
           .then((response) => {
               _storeData = async () => {
@@ -68,7 +69,7 @@ export default class LoginScreen extends React.Component {
                 <TextInput style={styles.input} onChangeText={pass => this.setState({pass})}/>
 
                 <View style={styles.button}>
-                    <Button title="Login" onPress={() => this.props.navigation.navigate('Home')} />
+                    <Button title="Login" onPress={this.handleSubmit} />
                 </View>
 
                 <View style={styles.button}> 

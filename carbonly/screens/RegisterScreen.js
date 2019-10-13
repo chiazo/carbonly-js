@@ -22,8 +22,8 @@ export default class RegisterScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: {},
-      pass: {},
+      user: '',
+      pass: '',
     };
   };
 
@@ -33,10 +33,11 @@ export default class RegisterScreen extends React.Component {
     console.log(user, pass);
     fetch('https://dioxidely-data-beta.herokuapp.com/register', {
       method: 'POST',
-      data: {
+      body: JSON.stringify({
         email: user,
         password: pass,
       },
+      ),
     })
       .then(function (response) {
         return response.json()
@@ -52,7 +53,7 @@ export default class RegisterScreen extends React.Component {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
-        <Text style={styles.baseText} onSubmit>Username:</Text>
+        <Text style={styles.baseText} >Username:</Text>
         <TextInput style={styles.input} onChangeText={user => this.setState({ user })} />
         <Text style={styles.baseText} >Password:</Text>
         <TextInput style={styles.input} onChangeText={pass => this.setState({ pass })} />
