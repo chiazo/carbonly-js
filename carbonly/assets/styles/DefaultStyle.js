@@ -1,10 +1,23 @@
 import {StyleSheet} from 'react-native';
 
+const colors = {
+    back: '#161515',
+    pri: '#247ba0',
+    priAlt: '#006494',
+    sec: '#006494',
+    secAlt: '#00a878',
+  };
+
+
 export default StyleSheet.create({
     container: {
       flex: 1,
       paddingTop: 15,
-      backgroundColor: '#7fdbff',
+      backgroundColor: colors.back,
+      alignItems: 'center',
+    },
+    headerImage: {
+      resizeMode: 'center',
     },
     optionsTitleText: {
       fontSize: 20,

@@ -1,18 +1,18 @@
 import React from 'react';
 import {
+  Image,
   Button,
   Text,
   View,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import logo from '../assets/images/logo.png';
 
 export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.optionsTitleText}>
-          Carbonly
-        </Text>
+        <Image source={logo} style={styles.headerImage} />
 
         <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')}/>
         <Button title="Appliances" onPress={() => this.props.navigation.navigate('Appliances')}/>
