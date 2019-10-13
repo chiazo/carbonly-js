@@ -7,6 +7,11 @@ import {
 import styles from '../assets/styles/DefaultStyle';
 
 export default class DescriptionScreen extends React.Component {
+    navigationOptions = {
+        header: null,
+        title: 'Offset Options',
+    };
+
     render() {
       return (
         <View style={styles.container}>
