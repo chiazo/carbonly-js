@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   Button
 } from 'react-native';
+import styles from '../assets/styles/DefaultStyle';
 
 export default class OffsetScreen extends React.Component {
   render() {
@@ -26,6 +26,7 @@ export default class OffsetScreen extends React.Component {
 OffsetScreen.navigationOptions = {
   header: null,
 };
+<<<<<<< HEAD
 
 const styles = StyleSheet.create({
   container: {
@@ -65,3 +66,5 @@ const styles = StyleSheet.create({
     borderBottomColor: '#EDEDED',
   },
 });
+=======
+>>>>>>> e83c53ac7f75b831ba4930cd40b08d6b3c1bde62

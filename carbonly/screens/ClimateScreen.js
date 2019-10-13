@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   Button
 } from 'react-native';
+import styles from '../assets/styles/DefaultStyle';
 
 export default class ClimateScreen extends React.Component {
   render() {
@@ -21,12 +21,3 @@ export default class ClimateScreen extends React.Component {
 ClimateScreen.navigationOptions = {
   header: null,
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-

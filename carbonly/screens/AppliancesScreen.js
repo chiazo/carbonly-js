@@ -1,5 +1,10 @@
 import React from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, Button } from 'react-native';
+=======
+import {View, Button, Text} from 'react-native';
+import styles from '../assets/styles/DefaultStyle';
+>>>>>>> e83c53ac7f75b831ba4930cd40b08d6b3c1bde62
 
 export default class AppliancesScreen extends React.Component {
   render() {
@@ -18,40 +23,4 @@ export default class AppliancesScreen extends React.Component {
 AppliancesScreen.navigationOptions = {
   header: null,
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
-  },
-  optionsTitleText: {
-    fontSize: 16,
-    color: '#00abff',
-    marginLeft: 15,
-    marginTop: 9,
-    marginBottom: 12,
-  },
-  optionsSubTitleText: {
-    fontSize: 14,
-    color: '#005eff',
-    marginLeft: 15,
-    marginTop: 9,
-    marginBottom: 12,
-  },
-  optionIconContainer: {
-    marginRight: 9,
-  },
-  option: {
-    backgroundColor: '#fdfdfd',
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#EDEDED',
-  },
-  optionText: {
-    fontSize: 15,
-    marginTop: 1,
-  },
-});
 

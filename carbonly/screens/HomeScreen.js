@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  StyleSheet,
   Button,
   Text,
   View,
 } from 'react-native';
+import styles from '../assets/styles/DefaultStyle';
 
 export default class HomeScreen extends React.Component {
   render() {
@@ -13,7 +13,7 @@ export default class HomeScreen extends React.Component {
         <Text>
           Carbonly
         </Text>
-        
+
         <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')}/>
         <Button title="Appliances" onPress={() => this.props.navigation.navigate('Appliances')}/>
         <Button title="Climate" onPress={() => this.props.navigation.navigate('Climate')}/>
@@ -27,12 +27,4 @@ export default class HomeScreen extends React.Component {
 HomeScreen.navigationOptions = {
   header: null,
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 

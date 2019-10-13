@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   Button
 } from 'react-native';
+import styles from '../assets/styles/DefaultStyle';
 
 export default class TravelScreen extends React.Component {
   render() {
@@ -25,6 +25,7 @@ TravelScreen.navigationOptions = {
   header: null,
 };
 
+<<<<<<< HEAD
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -64,3 +65,5 @@ const styles = StyleSheet.create({
   },
 });
 
+=======
+>>>>>>> e83c53ac7f75b831ba4930cd40b08d6b3c1bde62
