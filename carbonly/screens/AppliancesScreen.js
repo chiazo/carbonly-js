@@ -15,5 +15,8 @@ export default class AppliancesScreen extends React.Component {
     );
   }
 }
+AppliancesScreen.navigationOptions = {
+  title: 'Appliances',
+};
 
 

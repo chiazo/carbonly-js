@@ -20,6 +20,6 @@ export default class TravelScreen extends React.Component {
 }
 
 TravelScreen.navigationOptions = {
-  title:"Travel",
+  title: "Travel",
 };
 
