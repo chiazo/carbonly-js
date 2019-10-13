@@ -10,7 +10,7 @@ export default class PurchaseConfirmationScreen extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-            <Button title="Offsets Options" onPress={() => this.props.navigation.navigate('Offsets')}/>
+            <Button title="Offsets Options" onPress={() => this.props.navigation.navigate('Offset')}/>
             <Text style={styles.headerText}>Purchase Confirmation</Text>
             <Text style={styles.baseText}>You may purchase this offset in 50-point increments.</Text>
             <Text style={styles.baseText}>Each increment results in a 70-kilogram carbon offset being bought.</Text>
