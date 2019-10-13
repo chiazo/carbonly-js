@@ -4,6 +4,7 @@ import {
   View,
   Button,
   Image,
+  TextInput,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
@@ -46,7 +47,10 @@ handleSubmit(e) {
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
         <Text style={styles.baseText}>Username:</Text>
+        <TextInput style={styles.input}/>
         <Text style={styles.baseText}>Password:</Text>
+        <TextInput style={styles.input}/>
+
         <Button title="Register" onPress={() => this.props.navigation.navigate('Login')} />
       </View>
     );
