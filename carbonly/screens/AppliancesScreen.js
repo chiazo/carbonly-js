@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { BarChart } from Recharts;
 
-export default class TransportationScreen extends React.Component {
+export default class AppliancesScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -16,7 +16,7 @@ export default class TransportationScreen extends React.Component {
   }
 }
 
-TransportationScreen.navigationOptions = {
+AppliancesScreen.navigationOptions = {
   header: null,
 };
 

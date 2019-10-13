@@ -13,10 +13,12 @@ export default class HomeScreen extends React.Component {
         <Text>
           Carbonly
         </Text>
-        <Button
-          title="Transportation"
-          onPress={() => this.props.navigation.navigate('Transportation')}
-        />
+        
+        <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')}/>
+        <Button title="Appliances" onPress={() => this.props.navigation.navigate('Appliances')}/>
+        <Button title="Climate" onPress={() => this.props.navigation.navigate('Climate')}/>
+        <Button title="Buy Offsets" onPress={() => this.props.navigation.navigate('Offset')}/>
+        
       </View>
     );
   }

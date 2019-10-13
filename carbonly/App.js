@@ -2,15 +2,19 @@ import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './screens/HomeScreen'
-import TransportationScreen from './screens/TransportationScreen'
+
+import TravelScreen from './screens/TravelScreen'
+import AppliancesScreen from './screens/AppliancesScreen'
+import ClimateScreen from './screens/ClimateScreen'
+import OffsetScreen from './screens/OffsetScreen'
 
 const AppNavigator = createStackNavigator(
   {
   Home: HomeScreen,
-  Transportation: TransportationScreen,
-  /*Appliances: AppliancesScreen,
+  Travel: TravelScreen,
+  Appliances: AppliancesScreen,
   Climate: ClimateScreen,
-  Offsets: OffsetsScreen,*/
+  Offset: OffsetScreen,
   },
   {
     initialRouteName: 'Home',
