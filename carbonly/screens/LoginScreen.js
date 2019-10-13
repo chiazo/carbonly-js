@@ -37,8 +37,14 @@ export default class LoginScreen extends React.Component {
               password: self.refs.password
             }
           })
-          .then(function(response) {
-            return response.json()
+          .then((response) => {
+              _storeData = async () => {
+                  try{
+                      await AsyncStorage.setItem("token", response.json())
+                  } catch (error) {
+
+                  }
+              }
           }).then(function(body) {
             console.log(body);
           });
