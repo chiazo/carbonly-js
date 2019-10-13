@@ -35,7 +35,7 @@ export default StyleSheet.create({
       marginRight: 25,
       marginTop: 3,
       marginBottom: 4,
-      textAlign: center,
+      textAlign: 'center',
     },
     optionIconContainer: {
       marginRight: 9,
