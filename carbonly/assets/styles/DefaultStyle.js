@@ -28,6 +28,15 @@ export default StyleSheet.create({
       marginTop: 3,
       marginBottom: 4,
     },
+    optionCenteredText: {
+      fontSize: 16,
+      color: '#00b88e',
+      marginLeft: 25,
+      marginRight: 25,
+      marginTop: 3,
+      marginBottom: 4,
+      textAlign: center,
+    },
     optionIconContainer: {
       marginRight: 9,
     },
