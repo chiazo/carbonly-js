@@ -19,7 +19,10 @@ export default class ClimateScreen extends React.Component {
   render() {
     return (
       <View style={styles.centerContainer}>
-        <Text style={styles.baseText}>Climate ready fo austin</Text>
+          <Text style={styles.baseText}>Today</Text>
+          <Text style={styles.baseText}>Weekly</Text>
+          <Text style={styles.baseText}>Monthly</Text>
+          <Text style={styles.baseText}>All-Time</Text>
       </View>
     );
   }

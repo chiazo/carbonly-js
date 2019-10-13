@@ -22,7 +22,7 @@ export default class TravelScreen extends React.Component {
           <Text style={styles.baseText}>Today</Text>
           <Text style={styles.baseText}>Weekly</Text>
           <Text style={styles.baseText}>Monthly</Text>
-          <Text style={styles.baseText}>All-time Average</Text>
+          <Text style={styles.baseText}>All-Time</Text>
       </View>
     );
   }
