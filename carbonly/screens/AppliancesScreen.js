@@ -7,10 +7,10 @@ export default class AppliancesScreen extends React.Component {
   render() {
     return (
       <View style={styles.centerContainer}>
-          <Text style={styles.baseText}>Current</Text>
+          <Text style={styles.baseText}>Today</Text>
           <Text style={styles.baseText}>Weekly Average</Text>
           <Text style={styles.baseText}>Monthly Average</Text>
-          <Text style={styles.baseText}>All-time Average</Text>
+          <Text style={styles.baseText}>All-Time</Text>
       </View>
     );
   }
