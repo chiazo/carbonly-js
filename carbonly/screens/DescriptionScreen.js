@@ -13,7 +13,6 @@ export default class DescriptionScreen extends React.Component {
       return (
         <ScrollView style={styles.scrollColorFix}>
         <View style={styles.centerContainer}>
-            <Button title="Offsets Options" onPress={() => this.props.navigation.navigate('Offset')}/>
             <Text style={styles.headerText}>[FullName]</Text>
                 <Text style={styles.baseText}>[Description]</Text>
                 
@@ -26,5 +25,5 @@ export default class DescriptionScreen extends React.Component {
 }
 
 DescriptionScreen.navigationOptions = {
-  header: null,
+  title: 'Offset Option',
 };
