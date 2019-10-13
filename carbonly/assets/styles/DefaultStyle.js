@@ -10,44 +10,23 @@ const colors = {
 
 
 export default StyleSheet.create({
-    container: {
+    centerContainer: {
       flex: 1,
-      paddingTop: 15,
-      backgroundColor: colors.back,
       alignItems: 'center',
+      backgroundColor: colors.back,
     },
-    headerImage: {
-      resizeMode: 'center',
+    headerText: {
+      fontSize: 32,
     },
-    optionsTitleText: {
+    textHierContainer: {
       fontSize: 20,
       color: colors.pri,
       marginTop: 9,
-      marginBottom: 12,
-      textAlign: 'center',
-    },
-    optionsSubTitleText: {
-      fontSize: 18,
-      color: colors.priAlt,
       marginLeft: 20,
-      marginTop: 9,
       marginBottom: 12,
-    },
-    optionText: {
-      fontSize: 16,
-      color: colors.pri,
-      marginLeft: 25,
-      marginRight: 25,
-      marginTop: 3,
-      marginBottom: 4,
-    },
-    optionCenteredText: {
-      fontSize: 16,
-      color: colors.pri,
-      marginLeft: 25,
-      marginRight: 25,
-      marginTop: 3,
-      marginBottom: 4,
       textAlign: 'center',
+    },
+    headerImage: {
+      resizeMode: 'center',
     },
   });

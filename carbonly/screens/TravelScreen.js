@@ -12,9 +12,9 @@ export default class TravelScreen extends React.Component {
       <View style={styles.container}>
         <Button title="Home" onPress={() => this.props.navigation.navigate('HomeScreen')}/>
         <Text style={styles.optionsTitleText}>Travel</Text>
-          <Text style={styles.optionsSubTitleText}>Today</Text>
-          <Text style={styles.optionsSubTitleText}>Weekly</Text>
-          <Text style={styles.optionsSubTitleText}>Monthly</Text>
+          <Text >Today</Text>
+          <Text >Weekly</Text>
+          <Text >Monthly</Text>
           <Text style={styles.optionsSubTitleText}>All-time Average</Text>
       </View>
     );

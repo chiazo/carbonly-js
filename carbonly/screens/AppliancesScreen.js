@@ -3,14 +3,15 @@ import {View, Button, Text} from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 
 export default class AppliancesScreen extends React.Component {
+  
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.textHierContainer}>
         <Text style={styles.optionsTitleText}>Appliances</Text>
-          <Text style={styles.optionsSubTitleText}>Current</Text>
-          <Text style={styles.optionsSubTitleText}>Weekly Average</Text>
-          <Text style={styles.optionsSubTitleText}>Monthly Average</Text>
-          <Text style={styles.optionsSubTitleText}>All-time Average</Text>
+          <Text>Current</Text>
+          <Text>Weekly Average</Text>
+          <Text>Monthly Average</Text>
+          <Text>All-time Average</Text>
       </View>
     );
   }

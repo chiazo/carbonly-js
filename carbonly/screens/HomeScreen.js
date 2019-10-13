@@ -11,7 +11,7 @@ import logo from '../assets/images/logo.png';
 export default class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
 
         <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')}/>
