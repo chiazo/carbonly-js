@@ -5,7 +5,6 @@ import {
   Button,
   Image,
   TextInput,
-  Alert,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
@@ -30,13 +29,12 @@ export default class RegisterScreen extends React.Component {
 
   handleSubmit = () => {
     const { user, pass }  = this.state ;
-    Alert.alert(user+" "+pass);
 
-   /* fetch('https://dioxidely-data-beta.herokuapp.com/register', {
+    fetch('https://dioxidely-data-beta.herokuapp.com/register', {
       method: 'POST',
       data: {
-        email: self.refs.email,
-        password: self.refs.password
+        email: user,
+        password: pass
       }
     })
       .then(function (response) {
@@ -44,8 +42,6 @@ export default class RegisterScreen extends React.Component {
       }).then(function (body) {
         console.log(body);
       });
-      */
-
       this.props.navigation.navigate('Login');
   };
 
