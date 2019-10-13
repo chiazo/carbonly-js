@@ -22,7 +22,6 @@ export default class LoginScreen extends React.Component {
         headerTintColor: colors.contrast,
         headerTitleStyle: styles.headerTitle,
     };
-
     constructor(props) {
         super(props);
         this.state = {
@@ -30,16 +29,15 @@ export default class LoginScreen extends React.Component {
           pass: {},
         };
       };
-
-    handleSubmit() {
-        //e.preventDefault();
-        var self = this;
+    
+    handleSubmit = () => {
+        const { user, pass }  = this.state ;
 
         fetch('https://dioxidely-data-beta.herokuapp.com/login', { 
             method: 'POST',
             data: {
-              email: self.refs.email,
-              password: self.refs.password
+              email: user,
+              password: pass
             }
           })
           .then((response) => {
@@ -52,7 +50,11 @@ export default class LoginScreen extends React.Component {
               }
           }).then(function(body) {
             console.log(body);
+          }).catch((error) => {
+            console.error("There was an error registering.");
           });
+
+          this.props.navigation.navigate('Home');
     }
 
     render() {
