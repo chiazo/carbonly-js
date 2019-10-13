@@ -5,6 +5,7 @@ import {
   Button,
   Image,
   TextInput,
+  Alert,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
@@ -19,17 +20,19 @@ export default class RegisterScreen extends React.Component {
     headerTitleStyle: styles.headerTitle,
   };
 
-  constructor() {
-    super();
-    this.state = { user: {} };
-    this.onSubmit = this.handleSubmit.bind(this);
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: {},
+      pass: {},
+    };
   };
 
-  handleSubmit(e) {
-    //e.preventDefault();
-    var self = this;
+  handleSubmit = () => {
+    const { user, pass }  = this.state ;
+    Alert.alert(user+" "+pass);
 
-    fetch('https://dioxidely-data-beta.herokuapp.com/register', {
+   /* fetch('https://dioxidely-data-beta.herokuapp.com/register', {
       method: 'POST',
       data: {
         email: self.refs.email,
@@ -41,18 +44,19 @@ export default class RegisterScreen extends React.Component {
       }).then(function (body) {
         console.log(body);
       });
+      */
   };
 
   render() {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
-        <Text style={styles.baseText}>Username:</Text>
-        <TextInput style={styles.input} />
-        <Text style={styles.baseText}>Password:</Text>
-        <TextInput style={styles.input} />
+        <Text style={styles.baseText} onSubmit>Username:</Text>
+        <TextInput style={styles.input} onChangeText={user => this.setState({user})}/>
+        <Text style={styles.baseText} >Password:</Text>
+        <TextInput style={styles.input} onChangeText={pass => this.setState({pass})}/>
 
-        <Button title="Register" onPress={this.handleSubmit()} />
+        <Button title="Register" onPress={this.handleSubmit} />
       </View>
     );
   }
