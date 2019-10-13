@@ -9,6 +9,7 @@ import ClimateScreen from './screens/ClimateScreen'
 import OffsetScreen from './screens/OffsetScreen'
 import DescriptionScreen from './screens/DescriptionScreen'
 import PurchaseConfirmationScreen from './screens/PurchaseConfirmationScreen'
+import AboutScreen from './screens/AboutScreen'
 
 const AppNavigator = createStackNavigator(
   {
@@ -19,6 +20,7 @@ const AppNavigator = createStackNavigator(
   Offset: OffsetScreen,
   Description: DescriptionScreen,
   Purchase: PurchaseConfirmationScreen,
+  About: AboutScreen,
   },
   {
     initialRouteName: 'Home',
