@@ -13,12 +13,14 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
-
+        <Text style={styles.headerText}>CO2e: </Text>
+        <Text style={styles.headerText}>ecoPints: </Text>
+        <View style={styles.spaceButtons}>
         <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')}/>
         <Button title="Appliances" onPress={() => this.props.navigation.navigate('Appliances')}/>
         <Button title="Climate" onPress={() => this.props.navigation.navigate('Climate')}/>
         <Button title="Buy Offsets" onPress={() => this.props.navigation.navigate('Offset')}/>
-        
+        </View>
       </View>
     );
   }

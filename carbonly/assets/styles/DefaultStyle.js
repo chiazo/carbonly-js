@@ -14,7 +14,6 @@ export default StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      margin: 10,
       backgroundColor: colors.back,
     },
     headerText: {
@@ -30,4 +29,7 @@ export default StyleSheet.create({
     headerImage: {
       resizeMode: 'center',
     },
+    spaceButtons: {
+      margin: 10,
+    }
   });

@@ -7,9 +7,6 @@ import {
 import styles from '../assets/styles/DefaultStyle';
 
 export default class DescriptionScreen extends React.Component {
-    navigationOptions = {
-        title: 'Offset Options',
-    };
 
     render() {
       return (
@@ -24,3 +21,7 @@ export default class DescriptionScreen extends React.Component {
     );
   }
 }
+
+DescriptionScreen.navigationOptions = {
+  title: 'Description',
+};

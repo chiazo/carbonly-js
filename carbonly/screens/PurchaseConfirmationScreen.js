@@ -24,5 +24,5 @@ export default class PurchaseConfirmationScreen extends React.Component {
 }
 
 PurchaseConfirmationScreen.navigationOptions = {
-        header: null,
+  title: 'Purchase Confirmation',
 };
