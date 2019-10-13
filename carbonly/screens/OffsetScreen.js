@@ -24,13 +24,13 @@ export default class OffsetScreen extends React.Component {
         <View style={styles.button}>
           <Button title="Protect the Alto Mayo Peruvian Forest. (879 points per tonne of CO2e)" onPress={() => this.props.navigation.navigate('HomeScreen')} />
         </View>
-        
+
       </View>
     );
   }
 }
 OffsetScreen.navigationOptions = {
-  title: 'Offset',
+  title: 'Buy a Carbon Offset',
 };
 
 

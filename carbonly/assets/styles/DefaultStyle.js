@@ -10,6 +10,9 @@ const colors = {
 
 
 export default StyleSheet.create({
+    scrollColorFix: {
+      backgroundColor: colors.back,
+    },
     centerContainer: {
       flex: 1,
       alignItems: 'center',
