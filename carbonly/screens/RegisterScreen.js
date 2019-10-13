@@ -28,14 +28,15 @@ export default class RegisterScreen extends React.Component {
   };
 
   handleSubmit = () => {
-    const { user, pass }  = this.state ;
+    const { user, pass } = this.state;
 
+    console.log(user, pass);
     fetch('https://dioxidely-data-beta.herokuapp.com/register', {
       method: 'POST',
       data: {
         email: user,
-        password: pass
-      }
+        password: pass,
+      },
     })
       .then(function (response) {
         return response.json()
@@ -44,7 +45,7 @@ export default class RegisterScreen extends React.Component {
       }).catch((error) => {
         console.log("There was an error registering.");
       });
-      this.props.navigation.navigate('Login');
+    this.props.navigation.navigate('Login');
   };
 
   render() {
@@ -52,9 +53,9 @@ export default class RegisterScreen extends React.Component {
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
         <Text style={styles.baseText} onSubmit>Username:</Text>
-        <TextInput style={styles.input} onChangeText={user => this.setState({user})}/>
+        <TextInput style={styles.input} onChangeText={user => this.setState({ user })} />
         <Text style={styles.baseText} >Password:</Text>
-        <TextInput style={styles.input} onChangeText={pass => this.setState({pass})}/>
+        <TextInput style={styles.input} onChangeText={pass => this.setState({ pass })} />
 
         <Button title="Register" onPress={this.handleSubmit} />
       </View>
