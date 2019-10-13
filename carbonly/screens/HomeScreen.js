@@ -10,7 +10,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
+        <Text style={styles.optionsTitleText}>
           Carbonly
         </Text>
 
