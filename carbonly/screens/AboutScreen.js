@@ -8,10 +8,21 @@ import {
 
 import styles from '../assets/styles/DefaultStyle';
 import logo from '../assets/images/logo.png';
+import colors from '../assets/styles/Colors';
 
-export default class HomeScreen extends React.Component {
+export default class AboutScreen extends React.Component {
+
+
+  static navigationOptions = {
+    title: 'About',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
+
     render() {
       return (
+        <ScrollView style={styles.scrollColorFix}>
         <View style={styles.centerContainer}>
           <Image source={logo} style={styles.headerImage}/>
           <Text style={styles.headerText}>The Issue</Text>
@@ -24,10 +35,8 @@ export default class HomeScreen extends React.Component {
           <Text style={styles.baseText}>Finally, using your phone to measure air temperature and comparing it to the outside temperature of your geolocation, Carbonly rewards you with points for utilizing HVAC systems in a sustainable fashion.</Text>
           <Text style={styles.baseText}>Each ecoPoint is worth approximately one cent, with carbon offsets generally being worth between $3.50 and $12 per tonne of CO2e. Partnering with the nonprofit Cool Effect, an organization that finds and monitors carbon offset projects around the world, we are able to use donations from sponsors to match your point donation to a monetary donation.</Text>
         </View >
+        </ScrollView>
       );
     }
   }
   
-  HomeScreen.navigationOptions = {
-    header: null,
-  };  
