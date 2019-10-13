@@ -2,15 +2,17 @@ import React from 'react';
 import {
   Text,
   View,
-  Button
+  Button,
+  Image,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
+import logo from '../assets/images/logo.png';
 
-export default class TravelScreen extends React.Component {
+export default class RegisterScreen extends React.Component {
 
   static navigationOptions = {
-    title: 'Travel',
+    title: 'Register an Account',
     headerStyle: styles.headerBar,
     headerTintColor: colors.contrast,
     headerTitleStyle: styles.headerTitle,
@@ -19,10 +21,10 @@ export default class TravelScreen extends React.Component {
   render() {
     return (
       <View style={styles.centerContainer}>
-          <Text style={styles.baseText}>Today</Text>
-          <Text style={styles.baseText}>Weekly</Text>
-          <Text style={styles.baseText}>Monthly</Text>
-          <Text style={styles.baseText}>All-Time</Text>
+        <Image source={logo} style={styles.headerImage} />
+        <Text style={styles.baseText}>Username:</Text>
+        <Text style={styles.baseText}>Password:</Text>
+        <Button title="Register" onPress={() => this.props.navigation.navigate('Login')} />
       </View>
     );
   }

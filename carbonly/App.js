@@ -9,10 +9,14 @@ import ClimateScreen from './screens/ClimateScreen'
 import OffsetScreen from './screens/OffsetScreen'
 import DescriptionScreen from './screens/DescriptionScreen'
 import PurchaseConfirmationScreen from './screens/PurchaseConfirmationScreen'
+import LoginScreen from './screens/LoginScreen'
+import RegisterScreen from './screens/RegisterScreen'
 import AboutScreen from './screens/AboutScreen'
 
 const AppNavigator = createStackNavigator(
   {
+  Register: RegisterScreen,
+  Login: LoginScreen,
   Home: HomeScreen,
   Travel: TravelScreen,
   Appliances: AppliancesScreen,
@@ -23,7 +27,7 @@ const AppNavigator = createStackNavigator(
   About: AboutScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Register',
   }
 );
 

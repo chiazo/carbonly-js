@@ -1,9 +1,16 @@
 import React from 'react';
 import {View, Button, Text} from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import colors from '../assets/styles/Colors';
 
 export default class AppliancesScreen extends React.Component {
-  
+  static navigationOptions = {
+    title: 'Appliances',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
+
   render() {
     return (
       <View style={styles.centerContainer}>
@@ -15,8 +22,5 @@ export default class AppliancesScreen extends React.Component {
     );
   }
 }
-AppliancesScreen.navigationOptions = {
-  title: 'Appliances',
-};
 
 
