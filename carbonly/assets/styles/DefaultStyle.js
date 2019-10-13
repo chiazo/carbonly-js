@@ -24,6 +24,7 @@ export default StyleSheet.create({
       fontSize: 16,
       color: '#00b88e',
       marginLeft: 25,
+      marginRight: 25,
       marginTop: 3,
       marginBottom: 4,
     },
