@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 const colors = {
     back: '#161515',   // Black
-    pri: '#403f3f',    // Gray
+    pri: '#a8a7a7',    // Gray
     accent: '#2975f4', // Blue
     accentAlt: '#1e56b2',    // Darker Blue
     secAccent: '#1bc181', // Pine Green
