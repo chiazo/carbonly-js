@@ -5,8 +5,17 @@ import {
   Button
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import colors from '../assets/styles/Colors';
 
 export default class PurchaseConfirmationScreen extends React.Component {
+
+  static navigationOptions = {
+    title: 'Purchase Confirmation',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
+
     render() {
       return (
         <View style={styles.centerContainer}>
@@ -21,7 +30,3 @@ export default class PurchaseConfirmationScreen extends React.Component {
     );
   }
 }
-
-PurchaseConfirmationScreen.navigationOptions = {
-  title: 'Purchase Confirmation',
-};

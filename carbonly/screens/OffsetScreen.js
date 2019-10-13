@@ -5,10 +5,16 @@ import {
   Button
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import colors from '../assets/styles/Colors';
 
 export default class OffsetScreen extends React.Component {
 
-
+  static navigationOptions = {
+    title: 'Buy a Carbon Offset',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
 
   render() {
     return (
@@ -29,8 +35,3 @@ export default class OffsetScreen extends React.Component {
     );
   }
 }
-OffsetScreen.navigationOptions = {
-  title: 'Buy a Carbon Offset',
-};
-
-

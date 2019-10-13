@@ -5,8 +5,17 @@ import {
   Button
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import colors from '../assets/styles/Colors';
 
 export default class TravelScreen extends React.Component {
+
+  static navigationOptions = {
+    title: 'Travel',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
+
   render() {
     return (
       <View style={styles.centerContainer}>
@@ -18,8 +27,3 @@ export default class TravelScreen extends React.Component {
     );
   }
 }
-
-TravelScreen.navigationOptions = {
-  title: "Travel",
-};
-

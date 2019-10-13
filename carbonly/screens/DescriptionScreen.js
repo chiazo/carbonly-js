@@ -6,8 +6,16 @@ import {
   ScrollView,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
+import colors from '../assets/styles/Colors';
 
 export default class DescriptionScreen extends React.Component {
+
+  static navigationOptions = {
+    title: 'Offset Options',
+    headerStyle: styles.headerBar,
+    headerTintColor: colors.contrast,
+    headerTitleStyle: styles.headerTitle,
+  };
 
     render() {
       return (
@@ -23,7 +31,3 @@ export default class DescriptionScreen extends React.Component {
     );
   }
 }
-
-DescriptionScreen.navigationOptions = {
-  title: 'Offset Option',
-};
