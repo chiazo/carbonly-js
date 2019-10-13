@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { BarChart } from Recharts;
 
 export default class AppliancesScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.optionsTitleText}>Travel</Text>
+        <Text style={styles.optionsTitleText}>Appliances</Text>
           <Text style={styles.optionsSubTitleText}>Current</Text>
           <Text style={styles.optionsSubTitleText}>Weekly Average</Text>
           <Text style={styles.optionsSubTitleText}>Monthly Average</Text>
