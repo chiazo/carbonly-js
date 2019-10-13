@@ -6,18 +6,14 @@ export default class AppliancesScreen extends React.Component {
   
   render() {
     return (
-      <View style={styles.textHierContainer}>
-        <Text style={styles.optionsTitleText}>Appliances</Text>
-          <Text>Current</Text>
-          <Text>Weekly Average</Text>
-          <Text>Monthly Average</Text>
-          <Text>All-time Average</Text>
+      <View style={styles.centerContainer}>
+          <Text style={styles.baseText}>Current</Text>
+          <Text style={styles.baseText}>Weekly Average</Text>
+          <Text style={styles.baseText}>Monthly Average</Text>
+          <Text style={styles.baseText}>All-time Average</Text>
       </View>
     );
   }
 }
 
-AppliancesScreen.navigationOptions = {
-  header: null,
-};
 
