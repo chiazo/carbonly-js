@@ -16,7 +16,7 @@ export default class DescriptionScreen extends React.Component {
             <Text style={styles.headerText}>[FullName]</Text>
                 <Text style={styles.baseText}>[Description]</Text>
                 
-                <Text style={styles.baseText}>Supporting this project costs [points per tonne] ecoPoints per tonne of CO2e.</Text>
+                <Text style={styles.baseText}>Supporting this project costs [ppt] ecoPoints per tonne of CO2e.</Text>
                 <Button title="Support this Project!" onPress={() => this.props.navigation.navigate('Purchase')}/>
         </View>
         </ScrollView>
