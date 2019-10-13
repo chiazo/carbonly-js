@@ -4,6 +4,7 @@ import {
     View,
     Button,
     Image,
+    TextInput,
 } from 'react-native';
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
@@ -21,13 +22,17 @@ export default class LoginScreen extends React.Component {
         headerTintColor: colors.contrast,
         headerTitleStyle: styles.headerTitle,
     };
-    constructor() {
-        super();
-        this.state = { user: {} };
-        this.onSubmit = this.handleSubmit.bind(this);
-      }
-    handleSubmit(e) {
-        e.preventDefault();
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          user: {},
+          pass: {},
+        };
+      };
+
+    handleSubmit() {
+        //e.preventDefault();
         var self = this;
 
         fetch('https://dioxidely-data-beta.herokuapp.com/login', { 
@@ -54,13 +59,19 @@ export default class LoginScreen extends React.Component {
         return (
             <View style={styles.centerContainer}>
                 <Image source={logo} style={styles.headerImage} />
+
                 <Text style={styles.baseText}>Username:</Text>
+                <TextInput style={styles.input} onChangeText={user => this.setState({user})}/>
                 <Text style={styles.baseText}>Password:</Text>
+                <TextInput style={styles.input} onChangeText={pass => this.setState({pass})}/>
+
                 <View style={styles.button}>
                     <Button title="Login" onPress={() => this.props.navigation.navigate('Home')} />
                 </View>
-                <View style={styles.button}>
-                    <Button title="Register" onPress={() => this.props.navigation.navigate('Register')} />
+
+                <View style={styles.button}> 
+                    <Button title="Register" onPress={this.handleSubmit} /> 
+
                 </View>
             </View>
         );

@@ -45,6 +45,8 @@ export default class RegisterScreen extends React.Component {
         console.log(body);
       });
       */
+
+      this.props.navigation.navigate('Login');
   };
 
   render() {
