@@ -43,6 +43,8 @@ export default class RegisterScreen extends React.Component {
         return response.json()
       }).then(function (body) {
         console.log(body);
+      }).catch((error) => {
+        console.log("There was an error registering.");
       });
       
   };
