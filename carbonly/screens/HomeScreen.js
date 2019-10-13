@@ -13,7 +13,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
-        <Text style={styles.headerText}>ecoPoints: [totalPoints]</Text>
+        <Text style={styles.headerText}>ecoPoints: 1000</Text>
           <View style={styles.button}>
             <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')} />
           </View>
