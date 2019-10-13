@@ -56,8 +56,9 @@ export default class RegisterScreen extends React.Component {
         <TextInput style={styles.input} onChangeText={user => this.setState({ user })} />
         <Text style={styles.baseText} >Password:</Text>
         <TextInput style={styles.input} onChangeText={pass => this.setState({ pass })} />
-
+        <View style={styles.button}> 
         <Button title="Register" onPress={this.handleSubmit} />
+        </View>
       </View>
     );
   }
