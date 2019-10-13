@@ -8,6 +8,9 @@ import {
 import styles from '../assets/styles/DefaultStyle';
 import colors from '../assets/styles/Colors';
 import logo from '../assets/images/logo.png';
+import { AsyncStorage } from "react-native";
+
+
 
 export default class LoginScreen extends React.Component {
 
@@ -18,6 +21,28 @@ export default class LoginScreen extends React.Component {
         headerTintColor: colors.contrast,
         headerTitleStyle: styles.headerTitle,
     };
+    constructor() {
+        super();
+        this.state = { user: {} };
+        this.onSubmit = this.handleSubmit.bind(this);
+      }
+    handleSubmit(e) {
+        e.preventDefault();
+        var self = this;
+
+        fetch('https://dioxidely-data-beta.herokuapp.com/login', { 
+            method: 'POST',
+            data: {
+              email: self.refs.email,
+              password: self.refs.password
+            }
+          })
+          .then(function(response) {
+            return response.json()
+          }).then(function(body) {
+            console.log(body);
+          });
+    }
 
     render() {
         return (

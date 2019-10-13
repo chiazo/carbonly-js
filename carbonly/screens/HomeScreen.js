@@ -8,6 +8,10 @@ import {
 import styles from '../assets/styles/DefaultStyle';
 import logo from '../assets/images/logo.png';
 
+function getUserInfo() {
+  return fetch("https://dioxidely-data-beta.herokuapp.com/login?")
+}
+
 export default class HomeScreen extends React.Component {
   render() {
     return (
@@ -29,7 +33,7 @@ export default class HomeScreen extends React.Component {
         <View style={styles.button}>
           <Button title="Buy Offsets" onPress={() => this.props.navigation.navigate('Offset')} />
         </View>
-        
+
       </View >
     );
   }
