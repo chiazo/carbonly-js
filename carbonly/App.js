@@ -15,6 +15,8 @@ const AppNavigator = createStackNavigator(
   Appliances: AppliancesScreen,
   Climate: ClimateScreen,
   Offset: OffsetScreen,
+  Description: DescriptionScreen,
+  Purchase: PurchaseConfirmationScreen,
   },
   {
     initialRouteName: 'Home',
