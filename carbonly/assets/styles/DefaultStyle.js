@@ -34,4 +34,7 @@ export default StyleSheet.create({
     button: {
       padding: 10,
     },
+    input: {
+      color: colors.sec,
+    },
   });
