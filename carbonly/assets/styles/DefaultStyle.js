@@ -21,21 +21,21 @@ export default StyleSheet.create({
     },
     optionsTitleText: {
       fontSize: 20,
-      color: '#00abff',
+      color: colors.pri,
       marginTop: 9,
       marginBottom: 12,
       textAlign: 'center',
     },
     optionsSubTitleText: {
       fontSize: 18,
-      color: '#005eff',
+      color: colors.priAlt,
       marginLeft: 20,
       marginTop: 9,
       marginBottom: 12,
     },
     optionText: {
       fontSize: 16,
-      color: '#00b88e',
+      color: colors.pri,
       marginLeft: 25,
       marginRight: 25,
       marginTop: 3,
@@ -43,7 +43,7 @@ export default StyleSheet.create({
     },
     optionCenteredText: {
       fontSize: 16,
-      color: '#00b88e',
+      color: colors.pri,
       marginLeft: 25,
       marginRight: 25,
       marginTop: 3,
@@ -54,7 +54,7 @@ export default StyleSheet.create({
       marginRight: 9,
     },
     option: {
-      backgroundColor: '#fdfdfd',
+      backgroundColor: colors.back,
       paddingHorizontal: 15,
       paddingVertical: 15,
       borderBottomWidth: StyleSheet.hairlineWidth,
