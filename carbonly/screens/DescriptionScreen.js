@@ -21,10 +21,10 @@ export default class DescriptionScreen extends React.Component {
       return (
         <ScrollView style={styles.scrollColorFix}>
         <View style={styles.centerContainer}>
-            <Text style={styles.headerText}>[FullName]</Text>
-                <Text style={styles.baseText}>[Description]</Text>
+            <Text style={styles.headerText}>Saving the Forests of Western Oaxaca, Mexico</Text>
+                <Text style={styles.baseText}>Mexico’s 65 million hectares of forest are disappearing at the rate of 1 million hectares a year. This project aims to mitigate environmental impacts caused by forest exploitation; restore areas with severe erosion or those affected by disease, fire, and pests; and to protect and prevent damage by fires, grazing, and illegal use of forest resources. The project is managed by a community of landowners who have pooled their resources.</Text>
                 
-                <Text style={styles.baseText}>Supporting this project costs [ppt] ecoPoints per tonne of CO2e.</Text>
+                <Text style={styles.baseText}>Supporting this project costs 714 ecoPoints per tonne of CO2e.</Text>
                 <Button title="Support this Project!" onPress={() => this.props.navigation.navigate('Purchase')}/>
         </View>
         </ScrollView>

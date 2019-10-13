@@ -21,7 +21,7 @@ export default class OffsetScreen extends React.Component {
       <View style={styles.centerContainer}>
         <Text style={styles.headerText}>Your ecoPoints: [totalPoints] </Text>
           <View style={styles.button}>
-            <Button title="[Full Name] ([ppt] ecoPoints per tonne of CO2e)" onPress={() => this.props.navigation.navigate('Description')}/>
+            <Button title="Saving the Forests of Western Oaxaca, Mexico (714 ecoPoints per tonne of CO2e)" onPress={() => this.props.navigation.navigate('Description')}/>
           </View>
           <View style={styles.button}>
             <Button title="[Full Name] ([ppt] ecoPoints per tonne of CO2e)" onPress={() => this.props.navigation.navigate('Description')}/>
