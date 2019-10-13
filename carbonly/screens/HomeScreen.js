@@ -13,8 +13,6 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.centerContainer}>
         <Image source={logo} style={styles.headerImage} />
-        <Text style={styles.headerText}>CO2e Emissions: [CO2e Emissions] tonnes</Text>
-        <Text style={styles.headerText}>CO2e Offset: [CO2e Offsets] tonnes</Text>
         <Text style={styles.headerText}>ecoPoints: [totalPoints]</Text>
           <View style={styles.button}>
             <Button title="Travel" onPress={() => this.props.navigation.navigate('Travel')} />
